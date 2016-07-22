@@ -39,6 +39,8 @@ class ushahidi::platform(
     refreshonly => true,
   }
 
+  include composer
+
   package { 'git':
     ensure => installed,
   }
