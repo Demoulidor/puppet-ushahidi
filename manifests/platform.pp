@@ -102,7 +102,6 @@ class ushahidi::platform(
 
   file { "${ushahidi_www_dir}/application/config/environments/development":
     ensure  => directory,
-    require => File["${ushahidi_www_dir}/application/config/environments"]
   }
 
 }
